@@ -1,6 +1,6 @@
 {
-  "name": "sandbox",
-  "version": "0.0.0",
+  "name": "angular-spreadsheet-dem0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --disable-host-check",
@@ -21,7 +21,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.2",
-    "@dhx/trial-spreadsheet": "5.0.10"
+    "@dhx/trial-spreadsheet": "^5.1.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.0",
