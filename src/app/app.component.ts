@@ -1,9 +1,17 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  template: `<spreadsheet />`,
+  selector: 'app-root',
+  template: `
+    <button (click)="toggleVisible()">Toggle Visible</button> {{ visible }}
+    <spreadsheet *ngIf="visible" (visibleChanged)="toggleVisible()" />
+  `,
 })
 export class AppComponent {
-  name = "";
+  visible = true;
+  name = '';
+
+  toggleVisible() {
+    this.visible = !this.visible;
+  }
 }
